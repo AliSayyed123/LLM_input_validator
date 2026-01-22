@@ -16,14 +16,6 @@ Python is used only for orchestration and **strict output schema enforcement**.
 
 ---
 
-## Setup Instructions
-
-### 1. Create and activate a virtual environment (recommended)
-```bash
-python -m venv venv
-source venv/bin/activate
-```
-
 ## Project Structure
 
 ```text
@@ -39,11 +31,15 @@ llm-input-validator/
     ├── promptfooconfig.yaml  # Config for evaluation framework
     └── testcases.yaml        # Sample test cases for validation
 ```
-### Requirements
-# Python 3.10+
-# OpenAI API key
-# Internet access
-# pip
+
+## Setup Instructions
+
+### 1. Create and activate a virtual environment (recommended)
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
 
 Setup Instructions
 Create and activate a virtual environment
