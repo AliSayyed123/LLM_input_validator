@@ -1,0 +1,24 @@
+providers:
+  - openai:gpt-4o-mini
+
+prompts:
+  - file://../prompts.py:VALIDATION_PROMPT
+
+tests: file://testcases.yaml
+
+assert:
+  - type: json
+  - schema:
+      type: object
+      required: [is_valid, errors, warnings]
+      properties:
+        is_valid:
+          type: boolean
+        errors:
+          type: array
+          items:
+            type: string
+        warnings:
+          type: array
+          items:
+            type: string
