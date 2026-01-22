@@ -3,9 +3,6 @@
 This project implements an **LLM-powered input validator** that validates a user profile JSON
 using **semantic reasoning** instead of hard-coded rules.
 
-All validation logic is delegated to a **Large Language Model (LLM)**.  
-Python is used only for orchestration and **strict output schema enforcement**.
-
 ---
 
 ## Requirements
@@ -57,9 +54,6 @@ Set environment variables
 ```bash
 Edit .env and add your OpenAI API key:
 ```
-env
-OPENAI_API_KEY=your_api_key_here
-OPENAI_MODEL=gpt-4o-mini
-Usage
-Run the validator on a sample JSON file:
+
+- Run the validator on a sample JSON file:
 
